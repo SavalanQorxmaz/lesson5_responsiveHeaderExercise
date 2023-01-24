@@ -60,7 +60,7 @@ header .mobile-menu-back {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgba(15, 84, 153, 0.534);
+  background-color: rgba(106, 108, 110, 0.534);
   border: 1px solid red;
   top: 0px;
   left: 0px;
@@ -120,13 +120,13 @@ header .mobile-menu .social a i:hover {
 main {
   height: 91vh;
   overflow-y: auto;
+  scroll-behavior: smooth;
+  transition: 2s;
 }
 main section {
   width: 100%;
-  height: 91vh;
   border: 1px solid black;
   text-align: center;
-  overflow: hidden;
 }
 main section h1 {
   font-size: 50px;

@@ -22,7 +22,6 @@ header {
     .container {
         width: 80%;
         height: 100%;
-        // border: 1px solid yellow;
         margin: auto;
     }
 
@@ -95,7 +94,7 @@ header {
         position: absolute;
         width: 100%;
         height: 100vh;
-        background-color: rgba(15, 84, 153, 0.534);
+        background-color: rgba(106, 108, 110, 0.534);
         border: 1px solid red;
         top: 0px;
         left: 0px;
@@ -177,7 +176,9 @@ header {
 main {
 
     height: 91vh;
-overflow-y: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    transition: 2s;
 
 
 
@@ -187,10 +188,9 @@ overflow-y: auto;
 section {
 
     width: 100%;
-    height: 91vh;
     border: 1px solid black;
     text-align: center;
-    overflow: hidden;
+    
     
     h1 {
         font-size: 50px;
@@ -242,7 +242,6 @@ section {
     }
 
 }
-
 
 
 

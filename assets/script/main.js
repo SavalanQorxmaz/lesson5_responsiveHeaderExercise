@@ -22,7 +22,7 @@ menu.addEventListener(`click`, () => {
 
 
 close.onclick = () => {
-        mobileMenu.style.left = "-70%"
+    mobileMenu.style.left = "-70%"
     mobileMenu.style.transition = "1s"
     mobileMenuBack.style.display = "none"
 }
@@ -49,7 +49,7 @@ mobileMenu.addEventListener(`click`, e => {
     console.log(e.target.tagName)
     if((e.target.tagName == "A")&&(!e.target.hasAttribute("target"))){
         mobileMenu.style.left = "-70%"
-        mobileMenu.style.transition = "0.2s"
+        mobileMenu.style.transition = "1s"
         mobileMenuBack.style.display = "none"
         
     }

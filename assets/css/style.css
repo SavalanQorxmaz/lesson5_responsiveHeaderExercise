@@ -7,6 +7,12 @@
   text-decoration: none;
 }
 
+html {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9vh;
+}
+
 header {
   position: fixed;
   top: 0px;
@@ -117,12 +123,6 @@ header .mobile-menu .social a i:hover {
   height: 9vh;
 }
 
-main {
-  height: 91vh;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  transition: 2s;
-}
 main section {
   width: 100%;
   border: 1px solid black;
@@ -133,6 +133,7 @@ main section h1 {
 }
 main section p {
   font-size: 1.5rem;
+  padding: 10%;
 }
 
 @media screen and (max-width: 1170px) {

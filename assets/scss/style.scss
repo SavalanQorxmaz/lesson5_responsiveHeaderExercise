@@ -6,9 +6,15 @@
     list-style-type: none;
     font-size: 1.2rem;
     text-decoration: none;
+    
 }
 
-
+html {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9vh;
+   
+}
 
 
 header {
@@ -175,10 +181,10 @@ header {
 
 main {
 
-    height: 91vh;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    transition: 2s;
+    // height: 91vh;
+    // overflow-y: auto;
+    // scroll-behavior: smooth;
+    // scroll-margin-top: 9vh;
 
 
 
@@ -198,6 +204,7 @@ section {
     p {
         
         font-size: 1.5rem;
+        padding: 10%;
     }
 }
 }

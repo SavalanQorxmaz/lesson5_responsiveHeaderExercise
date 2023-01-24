@@ -46,13 +46,17 @@ window.onresize = () => {
 
 
 mobileMenu.addEventListener(`click`, e => {
-    if(!(e.target.hasAttribute("target"))){
+    console.log(e.target.tagName)
+    if((e.target.tagName == "A")&&(!e.target.hasAttribute("target"))){
         mobileMenu.style.left = "-70%"
         mobileMenu.style.transition = "0.2s"
         mobileMenuBack.style.display = "none"
+        
     }
     
 })
+
+
 
 
 // main
@@ -70,25 +74,4 @@ for(element of main.children)
 
 
 
-//section aktivlesmesi ucun transition meqsedile - islemir
 
-// console.log(main.children[0].id)
-// console.log(mobileMenu.children[1].children[1].getAttribute("href").slice(1))
-
-// mobileMenu.children[1].addEventListener("click",(e) =>{
-//     console.log(e.target.getAttribute("href").slice(1))
-//     let x= e.target.getAttribute("href").slice(1);
-//     document.getElementById(`${x}`).style.transition = "top: 1s"
-// })
-
-
-
-/*Scroll transition to anchor*/
-$("a.toscroll").on('click',function(e) {
-    var url = e.target.href;
-    var hash = url.substring(url.indexOf("#")+1);
-    $('html, body').animate({
-        scrollTop: $('#'+hash).offset().top
-    }, 500);
-    return false;
-});
